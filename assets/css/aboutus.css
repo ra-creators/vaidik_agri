@@ -1,0 +1,54 @@
+.bg-overlay {
+  background: url("../img/aboutus/top.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 336px;
+}
+
+#features {
+  background-image: url("../img/aboutus/second-bg.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  min-height: 60%;
+}
+
+#growth {
+  background: url("../img/aboutus/Group 6.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+#growth .card {
+  background-color: transparent;
+  border: none;
+}
+
+#growth .card .card-img-top {
+  height: 30%;
+  width: 30%;
+}
+
+#expert {
+  background: url("../img/aboutus/Rectangle 134.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+#expert #bottom-carousel {
+  margin-top: 230px;
+}
+
+#expert .row {
+  z-index: 5;
+}
+
+#expert .decorators {
+  margin: -3rem;
+  margin-top: -120px;
+  position: absolute;
+  z-index: 0;
+}
+/*# sourceMappingURL=aboutus.css.map */

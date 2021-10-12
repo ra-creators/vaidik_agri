@@ -1,0 +1,50 @@
+.msg-2 {
+  color: #37716d;
+}
+
+.bg-overlay {
+  background: url("../img/contactus/137.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 60vh;
+}
+
+#content {
+  -webkit-transform: translateY(-40%);
+          transform: translateY(-40%);
+  background: #ffffff;
+  border-radius: 19px;
+}
+
+#content form input,
+#content form select {
+  background: #f8f8f8;
+  border-radius: 5px;
+  border-width: 0;
+}
+
+#content form button {
+  background: #37716d;
+  -webkit-box-shadow: 0px 4px 50px rgba(0, 102, 101, 0.17);
+          box-shadow: 0px 4px 50px rgba(0, 102, 101, 0.17);
+  border-radius: 10px;
+  color: #fa8b17;
+}
+
+#content #contact-info {
+  background: #000000;
+  border-radius: 0px 19px 19px 0px;
+  color: #fff;
+}
+
+#content #contact-info .decorator {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+#content #contact-info .decorator img {
+  width: 50%;
+}
+/*# sourceMappingURL=contactus.css.map */
