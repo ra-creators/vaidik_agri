@@ -1,3 +1,8 @@
+<?php
+
+include("assets/partials/connection.php");
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -225,7 +230,7 @@ if(isset($_POST['submit']))
     <section id="content" class="container flex-grow">
       <div class="row">
         <div id="form" class="col-md-6">
-          <form action="" class="m-md-5">
+          <form action="contactus.php" method ="post" class="m-md-5">
             <div class="row mt-4">
               <div class="col-6">
                 <label for="" class="form-label">Full Name</label>
