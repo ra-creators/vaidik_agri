@@ -72,7 +72,7 @@ include("assets/partials/connection.php");
               <a class="nav-link h5" href="aboutus.php">About Us</a>
             </li>
             <li class="nav-item mx-3 fw-bolder">
-              <a class="nav-link h5" href="#">Blog</a>
+              <a class="nav-link h5" href="engineering.php">Blog</a>
             </li>
             <li class="nav-item mx-3 fw-bolder">
               <a class="nav-link h5" href="contactus.php">Contact Us</a>
@@ -116,7 +116,7 @@ include("assets/partials/connection.php");
             <a class="nav-link" href="aboutus.php">About Us</a>
           </li>
           <li class="nav-item mx-3 fw-bolder">
-            <a class="nav-link" href="#">Blog</a>
+            <a class="nav-link" href="engineering.php">Blog</a>
           </li>
           <li class="nav-item mx-3 fw-bolder">
             <a class="nav-link" href="contactus.php">Contact Us</a>

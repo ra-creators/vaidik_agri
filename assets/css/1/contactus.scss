@@ -1,0 +1,48 @@
+.msg-2 {
+  color: #37716d;
+}
+
+.bg-overlay {
+  background: url("/assets/img/contactus/Rectangle\ 137.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 60vh;
+}
+
+#content {
+  transform: translateY(-40%);
+  // margin-top: -20%;
+  background: #ffffff;
+  border-radius: 19px;
+  form {
+    input,
+    select {
+      background: #f8f8f8;
+      border-radius: 5px;
+      border-width: 0;
+    }
+
+    button {
+      background: #37716d;
+      box-shadow: 0px 4px 50px rgba(0, 102, 101, 0.17);
+      border-radius: 10px;
+      color: #fa8b17;
+    }
+  }
+
+  #contact-info {
+    background: #000000;
+    border-radius: 0px 19px 19px 0px;
+    color: #fff;
+
+    .decorator {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      img {
+        width: 50%;
+      }
+    }
+  }
+}

@@ -1,0 +1,288 @@
+* {
+  font-family: Open sans;
+}
+
+/* Navbar */
+#navbar-slider {
+  height: 100%;
+}
+
+/* Carousel */
+
+#slider-1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(/assets/img/slider-1.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100%;
+}
+#slider-2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(/assets/img/slider-2.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100%;
+}
+#slider-3 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(/assets/img/slider-3.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100%;
+}
+
+/* Features */
+
+#features-bg {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+    url(/assets/img/Veggie-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 80%;
+}
+
+#features-veggies {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+    url(/assets/img/Veggie-Patterns.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 40%;
+}
+
+@media screen and (max-width: 992px) {
+  #features-bg {
+    background-image: url(/assets/img/Veggie-bg.png),
+      url(/assets/img/Veggie-Patterns.png);
+    background-size: contain;
+    min-height: 60%;
+  }
+
+  #features-veggies {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+      url(/assets/img/Veggie-Patterns.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 10%;
+  }
+}
+
+/* Feature Images */
+
+.feature-img {
+  position: relative;
+}
+
+.feature-fab {
+  position: absolute;
+  bottom: -3%;
+  left: 10%;
+}
+
+@media screen and (max-width: 992px) {
+  .feature-img {
+    position: unset;
+  }
+
+  .feature-fab {
+    position: unset;
+  }
+}
+
+*/
+
+/* Welcome Section */
+
+#welcome {
+  min-height: 80%;
+}
+
+#cob-bg {
+  background-image: url(/assets/img/cob-1.png), url(/assets/img/cob-2.png);
+  background-position: right, right;
+  background-repeat: no-repeat, no-repeat;
+  background-size: contain, contain;
+}
+
+/* Services Section */
+
+#services-bg {
+  background-image: url(/assets/img/services-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 80%;
+}
+
+#services-whitebg {
+  background-color: white;
+  min-height: 30%;
+}
+
+.services-img {
+  position: relative;
+}
+
+.services-icon {
+  position: absolute;
+  bottom: 28%;
+  right: 25%;
+}
+.services-icon2 {
+  position: absolute;
+  bottom: 28%;
+  right: 25%;
+}
+
+@media screen and (max-width: 992px) {
+  .services-icon {
+    position: absolute;
+    bottom: 12%;
+    right: 25%;
+  }
+
+  #services-whitebg {
+    background-color: white;
+    min-height: 20%;
+  }
+}
+
+/* Projects */
+
+#project-bg {
+  background-image: url(/assets/img/projects-bg.png),
+    url(/assets/img/veggie-1.png);
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover, contain;
+  background-position: bottom right;
+  min-height: 60%;
+}
+
+/* Clients */
+
+#clients-bg {
+  background-image: url(/assets/img/clients-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 90%;
+}
+
+#clients-veggies {
+  background-image: url(/assets/img/veggie-1.png), url(/assets/img/veggie-2.png);
+  background-repeat: no-repeat, no-repeat;
+  background-size: 20%, 20%;
+  background-position: bottom left, bottom right;
+}
+
+/* Video */
+
+/* Blogs */
+
+.blog-icon {
+  position: absolute;
+  top: 45%;
+  left: 60%;
+}
+
+.white-fillerbg {
+  background-color: white;
+  min-height: 10%;
+}
+
+@media screen and (max-width: 992px) {
+  .blog-icon {
+    position: absolute;
+    top: 50%;
+    left: 60%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .blog-icon {
+    position: absolute;
+    top: 45%;
+    left: 60%;
+  }
+}
+
+/* Contacts */
+
+#contact-bg {
+  background-image: url(/assets/img/contact-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100%;
+}
+
+#leaves-1 {
+  background-image: url(/assets/img/leaves-1.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top right;
+}
+
+#leaves-2 {
+  background-image: url(/assets/img/leaves-2.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left bottom;
+}
+
+.contact-img {
+  right: 45%;
+}
+
+@media screen and (max-width: 992px) {
+  .contact-img {
+    right: 25%;
+  }
+}
+
+.contact-form {
+  background-image: linear-gradient(
+    180deg,
+    #ffecba 0%,
+    rgba(55, 113, 109, 0.44) 100%
+  );
+}
+
+.rounded-border {
+  border-radius: 12px;
+}
+
+/* Colors and Bg-Colors */
+.bg-peach {
+  background-color: #ffecba;
+}
+
+.text-teal {
+  color: teal;
+}
+
+.border-teal {
+  border: 5px solid teal;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+/* Back to Top Button */
+
+#btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  z-index: 2;
+}
+
+#decorators {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
