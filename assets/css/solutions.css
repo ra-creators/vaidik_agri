@@ -1,0 +1,33 @@
+article h1 {
+  color: #37716d;
+}
+
+.btn-discover {
+  background: #ffecba;
+  border: 3px solid #fa8b17;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 20px;
+  color: #37716d;
+}
+
+.btn-discover:hover {
+  -webkit-box-shadow: 0 0 20px #fa8b17;
+          box-shadow: 0 0 20px #fa8b17;
+}
+
+.feature-fab {
+  width: 75%;
+  margin: 0 auto;
+  text-align: center;
+  background: #ffecba;
+  color: #37716d;
+  border-radius: 20px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.feature-fab h3 {
+  margin: 1rem;
+}
+/*# sourceMappingURL=solutions.css.map */

@@ -1,0 +1,72 @@
+.nav-link {
+  color: white !important;
+}
+
+.active h2 {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  border-bottom: 4px solid #37716d;
+}
+
+#common-footer {
+  background-color: rgba(250, 139, 23, 0.85);
+}
+
+#common-footer .bg {
+  width: 100%;
+  position: absolute;
+}
+
+#common-footer * {
+  font-family: inherit;
+  color: #37716d;
+}
+
+#common-footer .social-list li {
+  font-family: "Font Awesome 5 Brands";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 3rem;
+  width: 3rem;
+  background-color: #37716d;
+  border-radius: 50%;
+}
+
+#common-footer .social-list li i {
+  font-size: 1.2rem;
+  color: rgba(250, 139, 23, 0.85);
+}
+
+#common-footer .link-list {
+  list-style: none;
+}
+
+#common-footer .link-list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#common-footer .link-list li a {
+  text-decoration: none;
+}
+
+#common-footer .footer-border-line {
+  border-bottom: 0.125rem solid #37716d;
+}
+
+#common-footer a {
+  text-decoration: underline;
+}
+/*# sourceMappingURL=base.css.map */

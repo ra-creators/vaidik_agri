@@ -1,0 +1,70 @@
+.nav-link {
+  color: white !important;
+}
+
+.active {
+  h2 {
+    width: max-content;
+    border-bottom: 4px solid #37716d;
+  }
+}
+
+// footer
+$footer-bg: rgba(250, 139, 23, 0.85);
+$footer-primary: #37716d;
+
+#common-footer {
+  background-color: $footer-bg;
+
+  .bg {
+    // height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+
+  * {
+    font-family: inherit;
+    color: $footer-primary;
+  }
+
+  .social-list {
+    // justify-content: space-between;
+    li {
+      font-family: "Font Awesome 5 Brands";
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 3rem;
+      width: 3rem;
+      background-color: $footer-primary;
+      border-radius: 50%;
+
+      i {
+        font-size: 1.2rem;
+        color: $footer-bg;
+      }
+    }
+  }
+
+  .link-list {
+    list-style: none;
+
+    li {
+      display: flex;
+      align-items: center;
+
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+
+  .footer-border-line {
+    border-bottom: 0.125rem solid $footer-primary;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+}

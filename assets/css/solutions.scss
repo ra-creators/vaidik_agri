@@ -1,0 +1,30 @@
+article {
+  h1 {
+    color: rgba(55, 113, 109, 1);
+  }
+}
+
+.btn-discover {
+  background: #ffecba;
+  border: 3px solid #fa8b17;
+  box-sizing: border-box;
+  border-radius: 20px;
+  color: rgba(55, 113, 109, 1);
+}
+.btn-discover:hover {
+  box-shadow: 0 0 20px #fa8b17;
+}
+
+.feature-fab {
+  width: 75%;
+  margin: 0 auto;
+  text-align: center;
+  background: #ffecba;
+  color: rgba(55, 113, 109, 1);
+  border-radius: 20px;
+  transform: translateY(-50%);
+
+  h3 {
+    margin: 1rem;
+  }
+}
