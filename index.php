@@ -432,12 +432,11 @@ if(isset($_POST['submit']))
 
         <h1 class="text-warning py-3 my-3">Better Agriculture for Better Future</h1>
 
-        <p class="fs-5 lead py-3 my-3">Vaidik Agri producer company Limited is one among the farmers group of
-          India who are expertise in farming the crops with a mix pattern of Vaidik
-          (ancient/pauranik) and scientific way of growing the crops, end to end pre
-          cultivation to post harvesting, along with the maintenance of land fossils by
-          fully organic way with the help of fatherly learnt farmers and consulting
-          Agricultural scientists.
+        <p class="fs-5 lead py-3 my-3">
+
+We have 30 years of agriculture & eco farming experience globaly
+<br>
+There are many variations of passages of lorem ipsum available but the majority have suffered alteration in some form by injected humor or random word which don't look even.
         </p>
 
         <div
