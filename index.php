@@ -1,6 +1,6 @@
 <?php
 
-include("assets/partials/connection.php");
+include("assets/partials/connection");
 ?>
 <!DOCTYPE html lang="en">
 
@@ -29,102 +29,102 @@ include("assets/partials/connection.php");
     <i class="bi bi-arrow-up"></i>
   </button>
 
-  <nav id="vap-navbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container-fluid">
-
-      <a href="#sidebar" class="float-start mt-3 d-md-block d-lg-none" data-bs-toggle="offcanvas" role="button"
-        aria-controls="sidebar">
-        <span class="navbar-toggler-icon"></span>
-      </a>
-
-      <!-- Left Offcanvas -->
-      <div class="offcanvas offcanvas-start bg-transparent text-light" tabindex="-1" id="sidebar"
-        aria-labelledby="sidebar-label">
-        <div class="offcanvas-header">
-          <img src="assets/img/Logo.png" class="img-fluid" height="40" alt="Logo">
-          <h3>Vaidik Agri Production</h3>
-          <button class="btn-close" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-          <ul class="navbar-nav ">
-            <li class="nav-item mx-3 fw-bolder">
-              <a class="nav-link h5 active" aria-current="page" href="#">Home</a>
+  <nav
+      class="navbar navbar-expand-lg navbar-dark"
+      style="background-color: rgba(251, 152, 49, 0.95)"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">
+          <div class="row">
+            <div class="col">
+              <img
+                src="assets/img/Logo.png"
+                class="img-fluid"
+                height="40"
+                alt="Logo"
+              />
+            </div>
+            <div class="col-auto">
+              <div class="row">
+                <h1>Vaidik</h1>
+              </div>
+              <div class="row">
+                <h3 class="ms-5">Agri Production</h3>
+              </div>
+            </div>
+          </div>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <ul class="navbar-nav flex-grow-1">
+            <li class="nav-item">
+              <a class="nav-link active" href="/"> <h2>Home</h2> </a>
             </li>
-            <li class="nav-item mx-3 fw-bolder dropdown">
-              <a class="nav-link h5 dropdown-toggle" href="#" id="solutionsDropdown" role="button"
-                data-bs-toggle="dropdown" aria-expanded="false">
-                Solutions
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="/solutions/solutions_farmer.html"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <h2>Solutions</h2>
               </a>
-
-              <ul class="dropdown-menu bg-transparent" aria-labelledby="solutionsDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
                 <li>
-                  <hr class="dropdown-divider">
+                  <a
+                    class="dropdown-item"
+                    href="/solutions/solutions_farmer.html"
+                    >For Farmers</a
+                  >
                 </li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li>
+                  <a class="dropdown-item" href="/solutions/solutions_entr.html"
+                    >For Micro-Entrepreneur</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="/solutions/solutions_buyer.html"
+                    >For Institutional Buyers</a
+                  >
+                </li>
               </ul>
             </li>
-            <li class="nav-item mx-3 fw-bolder">
-              <a class="nav-link h5" href="farmbook/farmbook.php">Farmbook</a>
+            <li class="nav-item">
+              <a class="nav-link" href="/farmbook/farmbook">
+                <h2>Farmbook</h2>
+              </a>
             </li>
-            <li class="nav-item mx-3 fw-bolder">
-              <a class="nav-link h5" href="aboutus.php">About Us</a>
+            <li class="nav-item flex-grow-1"></li>
+            <li class="nav-item">
+              <a class="nav-link" href="/aboutus"> <h2>AboutUs</h2> </a>
             </li>
-            <li class="nav-item mx-3 fw-bolder">
-              <a class="nav-link h5" href="engineering.php">Blog</a>
+            <li class="nav-item">
+              <a class="nav-link" href="/engineering"> <h2>Blog</h2> </a>
             </li>
-            <li class="nav-item mx-3 fw-bolder">
-              <a class="nav-link h5" href="contactus.php">Contact Us</a>
+            <li class="nav-item">
+              <a class="nav-link" href="/contactus"> <h2>ContactUs</h2> </a>
             </li>
           </ul>
         </div>
       </div>
-
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-        <a class="navbar-brand mx-5 fs-1 d-none d-lg-block" href="#">
-          <div class="row-cols-5">
-            <div class="col-10 float-start"><img src="assets/img/Logo.png" class="img-fluid" height="40" alt="Logo">
-              Vaidik </div>
-            <div class="offset-6 col-6 text-end"><span class="float-end fs-5">Agri Production</span></div>
-          </div>
-        </a>
-        <ul class="navbar-nav h3 me-auto">
-          <li class="nav-item mx-3 fw-bolder ">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item mx-3 fw-bolder dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="solutionsDropdown" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              Solutions
-            </a>
-            <ul class="dropdown-menu bg-transparent" aria-labelledby="solutionsDropdown">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li>
-          <li class="nav-item mx-3 fw-bolder">
-            <a class="nav-link" href="farmbook/farmbook.php">Farmbook</a>
-          </li>
-        </ul>
-        <ul class="navbar-nav d-flex h3 ms-auto">
-          <li class="nav-item mx-3 fw-bolder">
-            <a class="nav-link" href="aboutus.php">About Us</a>
-          </li>
-          <li class="nav-item mx-3 fw-bolder">
-            <a class="nav-link" href="engineering.php">Blog</a>
-          </li>
-          <li class="nav-item mx-3 fw-bolder">
-            <a class="nav-link" href="contactus.php">Contact Us</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+    </nav>
 
   
 <?php
@@ -879,7 +879,7 @@ while($row=mysqli_fetch_array($query)){
 
 
 
-              <form action="index.php" method="post">
+              <form action="index" method="post">
 
 
                 <div class="mb-3 px-3">
