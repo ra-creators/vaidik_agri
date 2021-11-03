@@ -446,13 +446,13 @@
                           <td>Image 1</td>
                           <td>10 Aug, 21</td>
                           <td>
-                            <a href="/img-id"
-                              ><img
-                                style="height: 15rem"
-                                src="https://source.unsplash.com/random"
-                                alt=""
-                              />
-                            </a>
+                            <img
+                              style="height: 20vh"
+                              src="https://source.unsplash.com/random"
+                              alt=""
+                              data-toggle="modal"
+                              data-target="#viewMedia"
+                            />
                           </td>
                           <td>
                             <a href="/img-id/edit"
@@ -467,13 +467,13 @@
                           <td>Image 1</td>
                           <td>10 Aug, 21</td>
                           <td>
-                            <a href="/img-id"
-                              ><img
-                                style="height: 15rem"
-                                src="https://source.unsplash.com/random"
-                                alt=""
-                              />
-                            </a>
+                            <img
+                              style="height: 20vh"
+                              src="https://source.unsplash.com/random"
+                              alt=""
+                              data-toggle="modal"
+                              data-target="#viewMedia"
+                            />
                           </td>
                           <td>
                             <a href="/img-id/edit"
@@ -488,13 +488,13 @@
                           <td>Image 1</td>
                           <td>10 Aug, 21</td>
                           <td>
-                            <a href="/img-id"
-                              ><img
-                                style="height: 15rem"
-                                src="https://source.unsplash.com/random"
-                                alt=""
-                              />
-                            </a>
+                            <img
+                              style="height: 20vh"
+                              src="https://source.unsplash.com/random"
+                              alt=""
+                              data-toggle="modal"
+                              data-target="#viewMedia"
+                            />
                           </td>
                           <td>
                             <a href="/img-id/edit"
@@ -509,13 +509,13 @@
                           <td>Image 1</td>
                           <td>10 Aug, 21</td>
                           <td>
-                            <a href="/img-id"
-                              ><img
-                                style="height: 15rem"
-                                src="https://source.unsplash.com/random"
-                                alt=""
-                              />
-                            </a>
+                            <img
+                              style="height: 20vh"
+                              src="https://source.unsplash.com/random"
+                              alt=""
+                              data-toggle="modal"
+                              data-target="#viewMedia"
+                            />
                           </td>
                           <td>
                             <a href="/img-id/edit"
@@ -654,5 +654,44 @@
     <script src="/admin-new/dist/js/demo.js"></script>
     <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
     <script src="/admin-new/dist/js/pages/dashboard3.js"></script>
+    <!-- media modal -->
+    <div
+      class="modal fade"
+      id="viewMedia"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="viewMediaLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <!-- <h5 class="modal-title" id="viewMediaLabel">View Vid</h5> -->
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img src="" alt="" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ./media modal -->
+    <script>
+      $("#viewMedia").on("show.bs.modal", function (event) {
+        let button = $(event.relatedTarget); // Button that triggered the modal
+        let recipient = button.attr("src"); // Extract info from data-* attributes
+        console.log(button);
+        console.log(recipient);
+        let modal = $(this);
+        modal.find(".modal-body img").attr("src", recipient);
+      });
+    </script>
   </body>
 </html>
