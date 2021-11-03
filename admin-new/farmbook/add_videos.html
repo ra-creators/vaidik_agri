@@ -11,7 +11,7 @@
       href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback"
     />
     <!-- Font Awesome Icons -->
-    <!-- <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css" /> -->
+    <!-- <link rel="stylesheet" href="/admin-new/plugins/fontawesome-free/css/all.min.css" /> -->
 
     <!-- IonIcons
     <link
@@ -294,7 +294,7 @@
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="/admin-new/farmbook/images.html" class="nav-link">
+                    <a href="./index2.html" class="nav-link">
                       <i class="nav-icon fas fa-image"></i>
                       <p>Images</p>
                     </a>
@@ -309,13 +309,13 @@
               </li>
               <li class="nav-header">ENGINEERING BLOGS</li>
               <li class="nav-item">
-                <a href="/admin-new/addblogs.html" class="nav-link">
+                <a href="pages/calendar.html" class="nav-link">
                   <i class="nav-icon fas fa-plus-square"></i>
                   <p>Add blog</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="/admin-new/blogs.html" class="nav-link active">
+                <a href="/admin-new/blogs.html" class="nav-link">
                   <i class="nav-icon fab fa-blogger-b"></i>
                   <p>Blogs</p>
                 </a>
@@ -323,7 +323,7 @@
 
               <li class="nav-header">MESSAGES</li>
               <li class="nav-item">
-                <a href="/admin-new/contactus.html" class="nav-link">
+                <a href="pages/calendar.html" class="nav-link">
                   <i class="nav-icon fas fa-comment-alt"></i>
                   <p>
                     Contact us msgs
@@ -345,7 +345,7 @@
           <div class="container-fluid">
             <div class="row mb-2">
               <div class="col-sm-6">
-                <h1 class="m-0">Engineering blogs</h1>
+                <h1 class="m-0">Add Videos</h1>
               </div>
               <!-- /.col -->
               <div class="col-sm-6">
@@ -358,109 +358,56 @@
             </div>
             <!-- /.row -->
           </div>
-          <!-- /.container-fluid -->
         </div>
         <!-- /.content-header -->
 
         <!-- Main content -->
         <div class="content">
           <div class="container-fluid">
-            <div class="row my-4">
-              <a href="#" class="ml-auto mr-1 btn btn-success">+</a>
-              <h4 class="my-auto">add engineering blog</h4>
-            </div>
             <div class="row">
               <div class="col-12">
                 <div class="card">
-                  <div class="card-body table-responsive p-0">
-                    <table class="table table-striped table-valign-middle">
-                      <thead>
-                        <tr>
-                          <th>Name</th>
-                          <th>Date</th>
-                          <th>Likes</th>
-                          <th>Comments</th>
-                          <th>Edit</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>Blog 1</td>
-                          <td>10 Aug, 21</td>
-                          <td>117</td>
-                          <td>14</td>
-                          <td>
-                            <a href="/blog-id/edit"
-                              ><i class="fas fa-edit"></i
-                            ></a>
-                            <a href="/blog-id/delete" class="text-danger"
-                              ><i class="fas fa-trash"></i
-                            ></a>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>Blog 1</td>
-                          <td>10 Aug, 21</td>
-                          <td>117</td>
-                          <td>14</td>
-                          <td>
-                            <a href="/blog-id/edit"
-                              ><i class="fas fa-edit"></i
-                            ></a>
-                            <a href="/blog-id/delete" class="text-danger"
-                              ><i class="fas fa-trash"></i
-                            ></a>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>Blog 1</td>
-                          <td>10 Aug, 21</td>
-                          <td>117</td>
-                          <td>14</td>
-                          <td>
-                            <a href="/blog-id/edit"
-                              ><i class="fas fa-edit"></i
-                            ></a>
-                            <a href="/blog-id/delete" class="text-danger"
-                              ><i class="fas fa-trash"></i
-                            ></a>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>Blog 1</td>
-                          <td>10 Aug, 21</td>
-                          <td>117</td>
-                          <td>14</td>
-                          <td>
-                            <a href="/blog-id/edit"
-                              ><i class="fas fa-edit"></i
-                            ></a>
-                            <a href="/blog-id/delete" class="text-danger"
-                              ><i class="fas fa-trash"></i
-                            ></a>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>Blog 1</td>
-                          <td>10 Aug, 21</td>
-                          <td>117</td>
-                          <td>14</td>
-                          <td>
-                            <a href="/blog-id/edit"
-                              ><i class="fas fa-edit"></i
-                            ></a>
-                            <a href="/blog-id/delete" class="text-danger"
-                              ><i class="fas fa-trash"></i
-                            ></a>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
+                  <div class="card-body">
+                    <form
+                      action="add_images.php"
+                      method="POST"
+                      enctype="multipart/form-data"
+                      class="bootstrap-form-with-validation"
+                    >
+                      <h2 class="text-center">Add Videos</h2>
+                      <div class="form-group mb-3">
+                        <label class="form-label" for="text-input">Author</label
+                        ><input
+                          class="form-control"
+                          type="text"
+                          id="text-input-1"
+                          name="author"
+                        />
+                      </div>
+
+                      <div class="form-group mb-3">
+                        <label class="form-label" for="file-input"
+                          >Select the Image</label
+                        ><input
+                          class="form-control"
+                          type="file"
+                          id="file-input"
+                          name="file"
+                        />
+                      </div>
+                      <div class="form-group mb-3">
+                        <button
+                          class="btn btn-primary"
+                          type="submit"
+                          name="upload"
+                        >
+                          Upload
+                        </button>
+                      </div>
+                    </form>
                   </div>
                 </div>
-                <!-- /.card -->
               </div>
-              <!-- /.col-12 -->
             </div>
           </div>
         </div>
@@ -508,9 +455,6 @@
 
     <!-- AdminLTE -->
     <script src="/admin-new/dist/js/adminlte.js"></script>
-
-    <!-- OPTIONAL SCRIPTS -->
-    <script src="/admin-new/plugins/chart.js/Chart.min.js"></script>
     <!-- AdminLTE for demo purposes -->
     <script src="/admin-new/dist/js/demo.js"></script>
     <!-- AdminLTE dashboard demo (This is only for demo purposes) -->

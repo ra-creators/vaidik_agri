@@ -315,7 +315,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="/admin-new/blogs.html" class="nav-link active">
+                <a href="/admin-new/blogs.html" class="nav-link">
                   <i class="nav-icon fab fa-blogger-b"></i>
                   <p>Blogs</p>
                 </a>
@@ -345,7 +345,7 @@
           <div class="container-fluid">
             <div class="row mb-2">
               <div class="col-sm-6">
-                <h1 class="m-0">Engineering blogs</h1>
+                <h1 class="m-0">Add vaidikwall Blog</h1>
               </div>
               <!-- /.col -->
               <div class="col-sm-6">
@@ -358,109 +358,85 @@
             </div>
             <!-- /.row -->
           </div>
-          <!-- /.container-fluid -->
         </div>
         <!-- /.content-header -->
 
         <!-- Main content -->
         <div class="content">
           <div class="container-fluid">
-            <div class="row my-4">
-              <a href="#" class="ml-auto mr-1 btn btn-success">+</a>
-              <h4 class="my-auto">add engineering blog</h4>
-            </div>
+            <div
+              class="d-sm-flex justify-content-between align-items-center mb-4"
+            ></div>
             <div class="row">
               <div class="col-12">
                 <div class="card">
-                  <div class="card-body table-responsive p-0">
-                    <table class="table table-striped table-valign-middle">
-                      <thead>
-                        <tr>
-                          <th>Name</th>
-                          <th>Date</th>
-                          <th>Likes</th>
-                          <th>Comments</th>
-                          <th>Edit</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>Blog 1</td>
-                          <td>10 Aug, 21</td>
-                          <td>117</td>
-                          <td>14</td>
-                          <td>
-                            <a href="/blog-id/edit"
-                              ><i class="fas fa-edit"></i
-                            ></a>
-                            <a href="/blog-id/delete" class="text-danger"
-                              ><i class="fas fa-trash"></i
-                            ></a>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>Blog 1</td>
-                          <td>10 Aug, 21</td>
-                          <td>117</td>
-                          <td>14</td>
-                          <td>
-                            <a href="/blog-id/edit"
-                              ><i class="fas fa-edit"></i
-                            ></a>
-                            <a href="/blog-id/delete" class="text-danger"
-                              ><i class="fas fa-trash"></i
-                            ></a>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>Blog 1</td>
-                          <td>10 Aug, 21</td>
-                          <td>117</td>
-                          <td>14</td>
-                          <td>
-                            <a href="/blog-id/edit"
-                              ><i class="fas fa-edit"></i
-                            ></a>
-                            <a href="/blog-id/delete" class="text-danger"
-                              ><i class="fas fa-trash"></i
-                            ></a>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>Blog 1</td>
-                          <td>10 Aug, 21</td>
-                          <td>117</td>
-                          <td>14</td>
-                          <td>
-                            <a href="/blog-id/edit"
-                              ><i class="fas fa-edit"></i
-                            ></a>
-                            <a href="/blog-id/delete" class="text-danger"
-                              ><i class="fas fa-trash"></i
-                            ></a>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>Blog 1</td>
-                          <td>10 Aug, 21</td>
-                          <td>117</td>
-                          <td>14</td>
-                          <td>
-                            <a href="/blog-id/edit"
-                              ><i class="fas fa-edit"></i
-                            ></a>
-                            <a href="/blog-id/delete" class="text-danger"
-                              ><i class="fas fa-trash"></i
-                            ></a>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
+                  <div class="card-body">
+                    <section class="article-list">
+                      <div class="container">
+                        <form
+                          action="add_articles.php"
+                          method="POST"
+                          enctype="multipart/form-data"
+                          class="bootstrap-form-with-validation"
+                        >
+                          <div class="form-group mb-3">
+                            <label class="form-label" for="text-input"
+                              >Title of article</label
+                            ><input
+                              class="form-control"
+                              type="text"
+                              id="text-input"
+                              name="title"
+                            />
+                          </div>
+                          <div class="form-group mb-3">
+                            <label class="form-label" for="text-input"
+                              >Author</label
+                            ><input
+                              class="form-control"
+                              type="text"
+                              id="text-input-1"
+                              name="author"
+                            />
+                          </div>
+                          <div class="form-group mb-3">
+                            <label class="form-label" for="textarea-input"
+                              >Contents</label
+                            ><textarea
+                              class="form-control"
+                              id="textarea-input"
+                              name="content"
+                              rows="10"
+                            ></textarea>
+                          </div>
+                          <div class="form-group mb-3">
+                            <div class="input-group"></div>
+                          </div>
+                          <div class="form-group mb-3">
+                            <label class="form-label" for="file-input"
+                              >Article Image</label
+                            ><input
+                              class="form-control"
+                              type="file"
+                              id="file-input"
+                              name="file"
+                            />
+                          </div>
+                          <div class="form-group mb-3">
+                            <button
+                              class="btn btn-primary"
+                              type="submit"
+                              name="upload"
+                            >
+                              Post
+                            </button>
+                          </div>
+                        </form>
+                      </div>
+                    </section>
                   </div>
                 </div>
-                <!-- /.card -->
               </div>
-              <!-- /.col-12 -->
             </div>
           </div>
         </div>
@@ -496,9 +472,9 @@
       crossorigin="anonymous"
     ></script>
     <!-- jQuery -->
-    <script src="/admin-new/plugins/jquery/jquery.min.js"></script>
+    <script src="plugins/jquery/jquery.min.js"></script>
     <!-- Bootstrap -->
-    <script src="/admin-new/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- JavaScript Bundle with Popper -->
     <!-- <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
@@ -510,7 +486,7 @@
     <script src="/admin-new/dist/js/adminlte.js"></script>
 
     <!-- OPTIONAL SCRIPTS -->
-    <script src="/admin-new/plugins/chart.js/Chart.min.js"></script>
+    <script src="plugins/chart.js/Chart.min.js"></script>
     <!-- AdminLTE for demo purposes -->
     <script src="/admin-new/dist/js/demo.js"></script>
     <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
