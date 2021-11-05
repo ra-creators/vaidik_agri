@@ -1,0 +1,69 @@
+// footer
+$footer-bg: #fa8b17d9;
+$footer-primary: #37716d;
+
+footer {
+  background-color: $footer-bg;
+  font-family: Open Sans;
+  .content {
+    background-color: $footer-bg;
+  }
+
+  .bg {
+    // height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+
+  * {
+    font-family: inherit;
+    color: $footer-primary;
+  }
+
+  .social-list {
+    li {
+      font-family: "Font Awesome 5 Brands";
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 2rem;
+      width: 2rem;
+      background-color: $footer-primary;
+      border-radius: 50%;
+
+      i {
+        color: $footer-bg;
+      }
+    }
+  }
+
+  .link-list {
+    list-style: none;
+
+    li {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .link-list li::before {
+    content: "\2022";
+    color: $footer-primary;
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: inline-block;
+    width: 1rem;
+  }
+
+  .bottom-row {
+    border: 0.979821px solid $footer-primary;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+}
