@@ -415,10 +415,17 @@
         <!-- /.content-header -->
 
         <!-- Main content -->
-        <div class="content">
+        <div class="content mb-5">
           <div class="container-fluid">
             <div class="row my-4">
-              <a href="#" class="ml-auto mr-1 btn btn-success">+</a>
+              <button
+                href="#"
+                class="ml-auto mr-1 btn btn-success"
+                data-toggle="modal"
+                data-target="#addFormModal"
+              >
+                +
+              </button>
               <h4 class="my-auto">add video</h4>
             </div>
             <div class="row">
@@ -439,13 +446,15 @@
                           <td>Image 1</td>
                           <td>10 Aug, 21</td>
                           <td>
-                            <a href="/img-id"
-                              ><img
-                                style="height: 15rem"
-                                src="https://source.unsplash.com/random"
-                                alt=""
-                              />
-                            </a>
+                            <iframe
+                              width="560"
+                              height="315"
+                              src="https://www.youtube.com/embed/LXb3EKWsInQ"
+                              title="YouTube video player"
+                              frameborder="0"
+                              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                              allowfullscreen
+                            ></iframe>
                           </td>
                           <td>
                             <a href="/img-id/edit"
@@ -460,13 +469,15 @@
                           <td>Image 1</td>
                           <td>10 Aug, 21</td>
                           <td>
-                            <a href="/img-id"
-                              ><img
-                                style="height: 15rem"
-                                src="https://source.unsplash.com/random"
-                                alt=""
-                              />
-                            </a>
+                            <iframe
+                              width="560"
+                              height="315"
+                              src="https://www.youtube.com/embed/LXb3EKWsInQ"
+                              title="YouTube video player"
+                              frameborder="0"
+                              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                              allowfullscreen
+                            ></iframe>
                           </td>
                           <td>
                             <a href="/img-id/edit"
@@ -481,13 +492,15 @@
                           <td>Image 1</td>
                           <td>10 Aug, 21</td>
                           <td>
-                            <a href="/img-id"
-                              ><img
-                                style="height: 15rem"
-                                src="https://source.unsplash.com/random"
-                                alt=""
-                              />
-                            </a>
+                            <iframe
+                              width="560"
+                              height="315"
+                              src="https://www.youtube.com/embed/LXb3EKWsInQ"
+                              title="YouTube video player"
+                              frameborder="0"
+                              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                              allowfullscreen
+                            ></iframe>
                           </td>
                           <td>
                             <a href="/img-id/edit"
@@ -502,13 +515,15 @@
                           <td>Image 1</td>
                           <td>10 Aug, 21</td>
                           <td>
-                            <a href="/img-id"
-                              ><img
-                                style="height: 15rem"
-                                src="https://source.unsplash.com/random"
-                                alt=""
-                              />
-                            </a>
+                            <iframe
+                              width="560"
+                              height="315"
+                              src="https://www.youtube.com/embed/LXb3EKWsInQ"
+                              title="YouTube video player"
+                              frameborder="0"
+                              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                              allowfullscreen
+                            ></iframe>
                           </td>
                           <td>
                             <a href="/img-id/edit"
@@ -553,6 +568,73 @@
     </div>
     <!-- ./wrapper -->
 
+    <!-- form modal -->
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="addFormModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="addFormModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="addFormModalLabel">
+              Add VaidikWall Video Form
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <form
+                action="add_images.php"
+                method="POST"
+                enctype="multipart/form-data"
+                class="bootstrap-form-with-validation"
+              >
+                <h2 class="text-center">Add Videos</h2>
+                <div class="form-group mb-3">
+                  <label class="form-label" for="text-input">Author</label
+                  ><input
+                    class="form-control"
+                    type="text"
+                    id="text-input-1"
+                    name="author"
+                  />
+                </div>
+
+                <div class="form-group mb-3">
+                  <label class="form-label" for="file-input"
+                    >Select the Image</label
+                  ><input
+                    class="form-control"
+                    type="file"
+                    id="file-input"
+                    name="file"
+                  />
+                </div>
+                <div class="form-group mb-3">
+                  <button class="btn btn-primary" type="submit" name="upload">
+                    Upload
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ./form modal -->
+
     <!-- REQUIRED SCRIPTS -->
 
     <!-- font-awesome -->
@@ -580,5 +662,44 @@
     <script src="/admin-new/dist/js/demo.js"></script>
     <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
     <script src="/admin-new/dist/js/pages/dashboard3.js"></script>
+    <!-- media modal -->
+    <div
+      class="modal fade"
+      id="viewMedia"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="viewMediaLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <!-- <h5 class="modal-title" id="viewMediaLabel">View Vid</h5> -->
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img src="" alt="" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ./media modal -->
+    <script>
+      $("#viewMedia").on("show.bs.modal", function (event) {
+        let button = $(event.relatedTarget); // Button that triggered the modal
+        let recipient = button.attr("src"); // Extract info from data-* attributes
+        console.log(button);
+        console.log(recipient);
+        let modal = $(this);
+        modal.find(".modal-body img").attr("src", recipient);
+      });
+    </script>
   </body>
 </html>

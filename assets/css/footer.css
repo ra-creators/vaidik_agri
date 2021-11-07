@@ -1,0 +1,73 @@
+footer {
+  background-color: #fa8b17d9;
+  font-family: Open Sans;
+}
+
+footer .content {
+  background-color: #fa8b17d9;
+}
+
+footer .bg {
+  width: 100%;
+  position: absolute;
+}
+
+footer * {
+  font-family: inherit;
+  color: #37716d;
+}
+
+footer .social-list li {
+  font-family: "Font Awesome 5 Brands";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 2rem;
+  width: 2rem;
+  background-color: #37716d;
+  border-radius: 50%;
+}
+
+footer .social-list li i {
+  color: #fa8b17d9;
+}
+
+footer .link-list {
+  list-style: none;
+}
+
+footer .link-list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .link-list li::before {
+  content: "\2022";
+  color: #37716d;
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: inline-block;
+  width: 1rem;
+}
+
+footer .bottom-row {
+  border: 0.97982px solid #37716d;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 0;
+}
+
+footer a {
+  text-decoration: underline;
+}
+/*# sourceMappingURL=footer.css.map */

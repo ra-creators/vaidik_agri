@@ -258,7 +258,7 @@
               </li>
               <li class="nav-header">FARMBOOK</li>
 
-              <li class="nav-item menu-open">
+              <li class="nav-item">
                 <a href="#" class="nav-link">
                   <i class="nav-icon fas fa-book"></i>
                   <p>
@@ -412,10 +412,17 @@
         <!-- /.content-header -->
 
         <!-- Main content -->
-        <div class="content">
+        <div class="content mb-5">
           <div class="container-fluid">
             <div class="row my-4">
-              <a href="#" class="ml-auto mr-1 btn btn-success">+</a>
+              <button
+                href="#"
+                class="ml-auto mr-1 btn btn-success"
+                data-toggle="modal"
+                data-target="#addFormModal"
+              >
+                +
+              </button>
               <h4 class="my-auto">add engineering blog</h4>
             </div>
             <div class="row">
@@ -536,6 +543,92 @@
       </footer>
     </div>
     <!-- ./wrapper -->
+
+    <!-- form modal -->
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="addFormModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="addFormModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="addFormModalLabel">
+              Add Engineering Blog Form
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <form
+                action="add_blog.php"
+                method="POST"
+                enctype="multipart/form-data"
+                class="bootstrap-form-with-validation"
+              >
+                <div class="form-group mb-3">
+                  <label class="form-label" for="text-input"
+                    >Title of Blog</label
+                  ><input
+                    class="form-control"
+                    type="text"
+                    id="text-input"
+                    name="title"
+                  />
+                </div>
+                <div class="form-group mb-3">
+                  <label class="form-label" for="text-input">Author</label
+                  ><input
+                    class="form-control"
+                    type="text"
+                    id="text-input-1"
+                    name="author"
+                  />
+                </div>
+                <div class="form-group mb-3">
+                  <label class="form-label" for="textarea-input">Contents</label
+                  ><textarea
+                    class="form-control"
+                    id="textarea-input"
+                    name="content"
+                    rows="10"
+                  ></textarea>
+                </div>
+                <div class="form-group mb-3">
+                  <div class="input-group"></div>
+                </div>
+                <div class="form-group mb-3">
+                  <label class="form-label" for="file-input">Blog Image</label
+                  ><input
+                    class="form-control"
+                    type="file"
+                    id="file-input"
+                    name="file"
+                  />
+                </div>
+                <div class="form-group mb-3">
+                  <button class="btn btn-primary" type="submit" name="upload">
+                    Post
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ./form modal -->
 
     <!-- REQUIRED SCRIPTS -->
 
