@@ -149,20 +149,7 @@ if(!isset($_SESSION['loggedin'])  || $_SESSION['loggedin']!=true){
                         </ul>
                     </div>
                 </nav>
-
-
-               
-
-
-
-
-
-
-
-
-
-
-
+                
                 <div class="container-fluid">
                     <div class="d-sm-flex justify-content-between align-items-center mb-4"></div>
                     <div class="row">

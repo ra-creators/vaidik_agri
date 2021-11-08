@@ -1,6 +1,6 @@
 <?php
 
-include("assets/partials/connection");
+include("assets/partials/connection.php");
 ?>
 
 <!DOCTYPE html>

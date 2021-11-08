@@ -1,4 +1,4 @@
-<?php
+ <?php
 
 
 
@@ -326,4 +326,5 @@ if(!isset($_SESSION['loggedin'])  || $_SESSION['loggedin']!=true){
     <script src="assets/js/theme.js"></script>
 </body>
 
-</html>
+</html> 
+
